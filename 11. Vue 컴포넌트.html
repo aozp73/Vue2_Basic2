@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뷰 기초 익히기</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app-1">
+      <my-button></my-button>
+    </div>
+    <div id="app-2">
+      <my-button></my-button>
+    </div>
+
+    <script>
+      const MyButton = {
+        template: `
+        <div>
+            {{ name }} <br />
+            <hello-world></hello-world>
+            <button @click="changeText">Click</button>
+        <div>
+        `,
+        data() {
+          return {
+            name: "hello-1",
+          };
+        },
+        methods: {
+          changeText() {
+            this.name = "hello-1 updated";
+          },
+        },
+      };
+
+      const app1 = new Vue({
+        el: "#app-1",
+        components: {
+          "my-button": MyButton,
+        },
+      });
+
+      const app2 = new Vue({
+        el: "#app-2",
+        components: {
+          "my-button": MyButton,
+        },
+      });
+    </script>
+  </body>
+</html>

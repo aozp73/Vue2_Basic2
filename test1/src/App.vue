@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link><br />
       <router-link to="/emit">emitStudy</router-link><br />
       <router-link to="/vmodel">VmodelStudy</router-link><br />
+      <router-link to="/slot">SlotStudy</router-link><br />
     </nav>
     <router-view />
   </div>

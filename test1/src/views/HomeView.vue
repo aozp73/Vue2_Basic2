@@ -3,7 +3,7 @@
     <h1>This is Home !!!</h1>
     <p>{{ name }}</p>
     <br />
-    <MyTest></MyTest>
+    <MyTest title="title1"></MyTest>
   </div>
 </template>
 

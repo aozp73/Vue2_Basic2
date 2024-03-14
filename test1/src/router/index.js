@@ -11,6 +11,18 @@ const routes = [
     component: HomeView,
   },
   {
+    path: "/emit",
+    name: "emit",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/EmitStudy.vue"),
+  },
+  {
+    path: "/vmodel",
+    name: "vmodel",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/VmodelStudy.vue"),
+  },
+  {
     path: "/about",
     name: "about",
     component: () =>

@@ -2,7 +2,7 @@
   <div>
     <h1>This is Home !!!</h1>
     <form action="">
-      <InputField :name="name" @update-name="updateName"></InputField>
+      <InputField2 v-model="name"></InputField2>
       <button>Submit</button>
     </form>
     {{ name }}
@@ -10,21 +10,21 @@
 </template>
 
 <script>
-import InputField from "@/components/InputField.vue";
+import InputField2 from "@/components/InputField2.vue";
 export default {
   components: {
-    InputField,
+    InputField2,
   },
   data() {
     return {
       name: "",
     };
   },
-  methods: {
-    updateName(name) {
-      this.name = name;
-    },
-  },
+  // methods: {
+  //   updateName(name) {
+  //     this.name = name;
+  //   },
+  // },
 };
 </script>
 

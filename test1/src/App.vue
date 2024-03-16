@@ -6,6 +6,7 @@
       <router-link to="/emit">emitStudy</router-link><br />
       <router-link to="/vmodel">VmodelStudy</router-link><br />
       <router-link to="/slot">SlotStudy</router-link><br />
+      <router-link to="/lifeCycle">LifeCycle Study</router-link><br />
     </nav>
     <router-view />
   </div>
